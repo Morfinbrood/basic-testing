@@ -2,13 +2,13 @@ import { generateLinkedList } from './index';
 
 describe('generateLinkedList', () => {
   test('should generate linked list from values 1', () => {
-    const elements = [1, 2, 3];
+    const values = [11, 22, 33];
     const expectedLinkedList = {
-      value: 1,
+      value: values[0],
       next: {
-        value: 2,
+        value: values[1],
         next: {
-          value: 3,
+          value: values[2],
           next: {
             value: null,
             next: null,
@@ -17,13 +17,13 @@ describe('generateLinkedList', () => {
       },
     };
 
-    expect(generateLinkedList(elements)).toStrictEqual(expectedLinkedList);
+    expect(generateLinkedList(values)).toStrictEqual(expectedLinkedList);
   });
 
   test('should generate linked list from values 2', () => {
-    const elements = ['a', 'b', 'c'];
+    const values = ['el1', 'el2', 'el3'];
 
-    const result = generateLinkedList(elements);
+    const result = generateLinkedList(values);
 
     expect(result).toMatchSnapshot();
   });

@@ -8,10 +8,10 @@ exports[`generateLinkedList should generate linked list from values 2 1`] = `
         "next": null,
         "value": null,
       },
-      "value": "c",
+      "value": "el3",
     },
-    "value": "b",
+    "value": "el2",
   },
-  "value": "a",
+  "value": "el1",
 }
 `;
